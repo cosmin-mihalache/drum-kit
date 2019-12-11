@@ -1,6 +1,6 @@
 const clickedDrums = document.querySelectorAll(".drum").length;
 
-for (let i = 0; clickedDrums; i++) {
+for (let i = 0; i < clickedDrums; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
     var buttonInnerHTML = this.innerHTML;
 
@@ -43,3 +43,8 @@ for (let i = 0; clickedDrums; i++) {
 
 // const audio = new Audio("sounds/tom-1.mp3");
 //     audio.play();
+
+
+document.addEventListener("keypress", function() {
+  alert("Key was press!");
+});
